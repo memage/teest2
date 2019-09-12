@@ -38,7 +38,7 @@ class Main(QDialog):
             b = float(self.lineEdit_b.text())
             x = float(self.lineEdit_x.text())
             if x >= 5:
-                answer = 5*((a ** 2)+(b ** 2) / x - 4 )
+                answer = 5 * ((a ** 2)+(b ** 2)) / (x - 4)
             else:
                 answer = (6 * a * b)  -  (5 * x)
             self.label_answer.setText('Ответ: ' + str(format(answer, '.2f')))
